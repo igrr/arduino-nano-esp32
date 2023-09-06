@@ -1,0 +1,9 @@
+description: Arduino Nano ESP32 Board Support Package
+
+url: https://github.com/igrr/arduino-nano-esp32
+issues: https://github.com/igrr/arduino-nano-esp32/issues
+documentation: https://github.com/igrr/arduino-nano-esp32/tree/main/README.md
+repository: https://github.com/arduino-nano-esp32/pa1010d.git
+
+dependencies:
+  idf: ">=5.0.0"
