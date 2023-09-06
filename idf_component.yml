@@ -7,3 +7,6 @@ repository: https://github.com/arduino-nano-esp32/pa1010d.git
 
 dependencies:
   idf: ">=5.0.0"
+
+targets:
+  - "esp32s3"
