@@ -29,7 +29,7 @@ esp_err_t bsp_leds_init(void)
     return err;
 }
 
-esp_err_t bsp_led_set(const bsp_led_t led_io, const bool on)
+esp_err_t bsp_led_set(bsp_led_t led_io, bool on)
 {
     unsigned level;
     if (led_io == BSP_LED_YELLOW) {
@@ -39,4 +39,3 @@ esp_err_t bsp_led_set(const bsp_led_t led_io, const bool on)
     }
     return gpio_set_level(led_io, level);
 }
-

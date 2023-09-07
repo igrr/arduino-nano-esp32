@@ -1,5 +1,6 @@
 build
 managed_components
+doxygen
 sdkconfig
 sdkconfig.old
 dependencies.lock
