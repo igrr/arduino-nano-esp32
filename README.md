@@ -13,7 +13,16 @@ idf.py add-dependency "igrr/arduino-nano-esp32"
 
 ## Example
 
-This component includes the `blink` example. It can be used as a starting point when developing an application on Nano ESP32 board. Aside from the obligatory blinking of LEDs, the example also contains default configuration (`sdkconfig.defaults`) for this board, setting up Flash, PSRAM and console output over USB.
+This component includes the `blink` example. It can be used as a starting point when developing an application on Nano ESP32 board.
+
+Aside from the obligatory blinking of LEDs, the example also contains default configuration (`sdkconfig.defaults`) for this board, which configures:
+
+- Flash
+- PSRAM
+- console output over USB
+- 32kHz XTAL as the RTC clock source
+
+To create the example project locally, run:
 
 ```bash
 idf.py create-project-from-example "igrr/arduino-nano-esp32:blink"
