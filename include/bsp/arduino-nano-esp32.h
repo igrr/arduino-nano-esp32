@@ -7,6 +7,12 @@
 /**
  * @file
  * @brief Arduino Nano ESP32 Board Support Package
+ *
+ * This file provides definitions and functions for the Arduino Nano ESP32 board.
+ * Pin definitions are provided using @ref PIN_A0, @ref PIN_A1, etc. macros.
+ * The @ref bsp_led_t enum defines the LEDs on the board.
+ * The @ref bsp_led_set() function can be used to turn LEDs on and off.
+ * Before using the LEDs, they must be initialized using @ref bsp_leds_init().
  */
 
 #pragma once
@@ -67,8 +73,11 @@ esp_err_t bsp_leds_init(void);
 
 /**
  * @brief Turn LED on/off
+ *
  * @param led_io    Which LED to manipulate (one of BSP_LED_*)
+ *
  * @param on        True to turn LED on, false to turn it off. Note that the polarity of the LED is already taken into account by this function.
+ *
  * @return
  *     - ESP_OK Success
  *     - ESP_ERR_INVALID_ARG Parameter error
