@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        idf_ver: ["release-v5.0", "release-v5.1", "latest"]
+        idf_ver: ["release-v5.0", "release-v5.1", "release-v5.2", "release-v5.3", "latest"]
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Build example
       uses: espressif/esp-idf-ci-action@v1
       with:
