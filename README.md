@@ -17,6 +17,7 @@ This component includes the `blink` example. It can be used as a starting point 
 
 Aside from the obligatory blinking of LEDs, the example also contains default configuration (`sdkconfig.defaults`) for this board, which configures:
 
+- CPU frequency
 - Flash
 - PSRAM
 - console output over USB
